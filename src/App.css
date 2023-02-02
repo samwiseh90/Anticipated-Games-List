@@ -10,7 +10,7 @@
   flex-direction: row;
   align-items: center;
   width: 50vw;
-  background-color: rgb(69, 121, 103);
+  background-color: rgb(164, 164, 164);
   padding: 2rem;
   border-radius: 1.2rem;
   border-bottom-left-radius: 0;
@@ -26,20 +26,23 @@ input {
   padding: 1.2rem;
 }
 
-button {
-  width: 4rem;
+.button {
+  display: flex;
+  flex-direction: column;
   height: 4rem;
-  font-size: 3.6rem;
+  width: 40vw;
+  align-items: center;
+  font-size: 2rem;
   border-radius: 0.8rem;
   border: none;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .list-container {
   display: flex;
   flex-direction: column;
   width: 50vw;
-  background-color: rgb(85, 39, 39);
+  background-color: rgb(215, 144, 68);
   padding: 2rem;
   border-radius: 1.2rem;
   border-top-left-radius: 0;

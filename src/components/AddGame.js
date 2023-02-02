@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import GameEntryForm from '../features/games/GameEntryForm';
 
 const AddGame = ({ dispatch }) => {
     const [inputValue, updateInput] = useState('');
 
-    const handleInputChange = (e) => {
-        updateInput(e.target.value);
-    };
+    // const handleInputChange = (e) => {
+    //     updateInput(e.target.value);
+    // };
 
     const submitHandler = (e) => {
         e.preventDefault();
@@ -15,8 +16,9 @@ const AddGame = ({ dispatch }) => {
 
     return (
         <form onSubmit={submitHandler}>
-            <input type='text' value={inputValue} onChange={handleInputChange} />
-            <button type='submit'>+</button>
+            {/* <input type='text' value={inputValue} onChange={handleInputChange} /> */}
+            {/* <button type='submit'>+</button> */}
+            <GameEntryForm />
         </form>
     );
 };

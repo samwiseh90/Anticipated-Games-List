@@ -10,14 +10,14 @@ const initState = {
 const listReducer = (state, action) => {
     console.log(action);
     switch (action.type) {
-        case 'ADD_ITEM':
+        case 'ADD_GAME':
             return {
                 ...state,
                 items: state.items.concat([
-                    { id: uuid(), name: action.payload }
+                    { id: uuid(), name: action.payload, releaseDate: action.payload }
                 ])
             };
-        case 'REMOVE_ITEM':
+        case 'REMOVE_GAME':
             return {
                 ...state,
                 items: state.items.filter(
