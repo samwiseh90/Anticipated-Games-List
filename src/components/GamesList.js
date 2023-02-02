@@ -1,6 +1,7 @@
 import { useReducer } from 'react';
 import { v4 as uuid } from 'uuid';
-import AddItem from './AddGame';
+// import AddItem from './AddGame';
+import AddGame from './AddGame';
 import ListItem from './ListItem';
 
 const initState = {
@@ -36,7 +37,7 @@ function GamesList() {
     return (
         <div className="app-container">
             <div className="input-container">
-                <AddItem dispatch={dispatch} />
+                <AddGame dispatch={dispatch} />
             </div>
             <div className="list-container">
                 {items.map((item) => {
